@@ -613,7 +613,7 @@
                     });
                     let cantAccidentebodyManoIzquierda = jsonAccidente.filter(function(type, index) {
                         return type.form4AreaManoIzquierda == "on"
-                    });
+                    });git config --global user.email "email@example.com"
                     let cantAccidentebodyManoDerecha = jsonAccidente.filter(function(type, index) {
                         return type.form4AreaManoDerecha == "on"
                     });
