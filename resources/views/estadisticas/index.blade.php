@@ -17,14 +17,20 @@
 
     <style>
         .cardManteniemito:hover {
-            background-color: #3D3D3D;
+            /* background-color: #3D3D3D; */
             -webkit-transition: background-color 500ms linear;
             -ms-transition: background-color 500ms linear;
             transition: background-color 500ms linear;
 
-            border: 4 px solid rgba(255, 119, 31, 80%);
+            /* border: 4 px solid rgba(255, 119, 31, 80%); */
 
-            color: white;
+            color: #FF771F;
+
+            border: 5px solid rgba(255, 119, 31, 80%);
+
+            -webkit-transition: border 500ms ease-out;
+            -moz-transition: border 500ms ease-out;
+            -o-transition: border 500ms ease-out;
         }
     </style>
 
@@ -92,7 +98,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
+                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -299,7 +305,7 @@
                 <!-- Demo info-->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
+                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -418,7 +424,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
+                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -529,7 +535,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
+                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -613,7 +619,7 @@
                     });
                     let cantAccidentebodyManoIzquierda = jsonAccidente.filter(function(type, index) {
                         return type.form4AreaManoIzquierda == "on"
-                    });git config --global user.email "email@example.com"
+                    });
                     let cantAccidentebodyManoDerecha = jsonAccidente.filter(function(type, index) {
                         return type.form4AreaManoDerecha == "on"
                     });
@@ -673,21 +679,21 @@
                             datasets: [{
                                 label: '# of Votes',
                                 data: [cantIncidentebodyCabeza.length + cantAccidentebodyCabeza.length,
-                                cantIncidentebodyCuello.length + cantAccidentebodyCuello.length,
-                                cantIncidentebodyHombro.length + cantAccidentebodyHombro.length,
-                                cantIncidentebodyBrazoIzquierdo.length + cantAccidentebodyBrazoIzquierdo.length,
-                                cantIncidentebodyBrazoDerecho.length + cantAccidentebodyBrazoDerecho.length,
-                                cantIncidentebodyManoIzquierda.length + cantAccidentebodyManoIzquierda.length,
-                                cantIncidentebodyManoDerecha.length + cantAccidentebodyManoDerecha.length,
-                                cantIncidentebodyPecho.length + cantAccidentebodyPecho.length,
-                                cantIncidentebodyTorax.length + cantAccidentebodyTorax.length,
-                                cantIncidentebodyEstomago.length + cantAccidentebodyEstomago.length,
-                                cantIncidentebodyAreaGenital.length + cantAccidentebodyAreaGenital.length,
-                                cantIncidentebodyPiernaIzquierdo.length + cantAccidentebodyPiernaIzquierdo.length,
-                                cantIncidentebodyPiernaDerecha.length + cantAccidentebodyPiernaDerecha.length,
-                                cantIncidentebodyPieIzquierdo.length + cantAccidentebodyPieIzquierdo.length,
-                                cantIncidentebodyPieDerecho.length + cantAccidentebodyPieDerecho.length,
-                                cantIncidentebodySinLesion.length + cantAccidentebodySinLesion.length
+                                    cantIncidentebodyCuello.length + cantAccidentebodyCuello.length,
+                                    cantIncidentebodyHombro.length + cantAccidentebodyHombro.length,
+                                    cantIncidentebodyBrazoIzquierdo.length + cantAccidentebodyBrazoIzquierdo.length,
+                                    cantIncidentebodyBrazoDerecho.length + cantAccidentebodyBrazoDerecho.length,
+                                    cantIncidentebodyManoIzquierda.length + cantAccidentebodyManoIzquierda.length,
+                                    cantIncidentebodyManoDerecha.length + cantAccidentebodyManoDerecha.length,
+                                    cantIncidentebodyPecho.length + cantAccidentebodyPecho.length,
+                                    cantIncidentebodyTorax.length + cantAccidentebodyTorax.length,
+                                    cantIncidentebodyEstomago.length + cantAccidentebodyEstomago.length,
+                                    cantIncidentebodyAreaGenital.length + cantAccidentebodyAreaGenital.length,
+                                    cantIncidentebodyPiernaIzquierdo.length + cantAccidentebodyPiernaIzquierdo.length,
+                                    cantIncidentebodyPiernaDerecha.length + cantAccidentebodyPiernaDerecha.length,
+                                    cantIncidentebodyPieIzquierdo.length + cantAccidentebodyPieIzquierdo.length,
+                                    cantIncidentebodyPieDerecho.length + cantAccidentebodyPieDerecho.length,
+                                    cantIncidentebodySinLesion.length + cantAccidentebodySinLesion.length
                                 ],
                                 backgroundColor: [
                                     'rgba(255, 99, 132, 0.2)',
@@ -754,7 +760,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
+                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->

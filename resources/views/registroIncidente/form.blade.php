@@ -33,31 +33,30 @@
         </div>
 
         <button class="carousel-control-prev" type="button" style="color: black; background-color: black; width: 5%; height: 50px; border-radius: 10%;" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <i class="fas fa-arrow-circle-left fa-2x" style="color: white;"></i>
             <span class="visually-hidden">Previous</span>
         </button>
 
         <button class="carousel-control-next" type="button" style="color: black; background-color: black; width: 5%; height: 50px; border-radius: 10%;" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <i class="fas fa-arrow-circle-right fa-2x" style="color: white;"></i>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
 
     <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:700);
-
-
         .button {
             background: #3D4C53;
             margin: 6px auto;
-            width: 200px;
-            height: 5%;
+            width: 250px;
+            height: 6%;
             overflow: hidden;
             text-align: center;
             transition: .2s;
             cursor: pointer;
             border-radius: 3px;
             box-shadow: 0px 1px 2px rgb(0 0 0 / 20%);
+            margin: auto;
         }
 
         .btnTwo {
@@ -98,13 +97,14 @@
             box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
         }
     </style>
+    
 
-    <div class="button">
+    <button class="button">
         <p class="btnText">Guardar Registro</p>
         <div class="btnTwo">
             <p class="btnText2">Si!</p>
         </div>
-    </div>
+    </button>
 
 </div>
 @include('layouts.footer')
