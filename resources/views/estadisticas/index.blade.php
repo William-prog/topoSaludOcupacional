@@ -92,7 +92,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
+                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -299,7 +299,7 @@
                 <!-- Demo info-->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
+                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -418,7 +418,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
+                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -529,7 +529,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
+                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
@@ -754,7 +754,7 @@
                 <!-- Demo info -->
                 <div class="row text-center mt-4">
                     <div class="col-6 border-right">
-                        <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span> -->
+                        <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Trabajadas</span>
                     </div>
                     <div class="col-6">
                         <!-- <div class="h4 font-weight-bold mb-0"></div><span class="small text-gray">Hrs Faltantes</span> -->
