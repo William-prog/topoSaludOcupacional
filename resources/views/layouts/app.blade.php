@@ -61,7 +61,7 @@
                             @else
 
                             <li style="font-size: 12px;" class="dropdown">
-                                <a href="/generalidades" class="sub-menu-toggle"> {{ __('Generalidades    ') }} <span class="caret"> <i class="fas fa-cogs"></i> </span> </a>
+                                <a href="/home" class="sub-menu-toggle"> {{ __('Generalidades    ') }} <span class="caret"> <i class="fas fa-cogs"></i> </span> </a>
                             </li>
 
                             <li style="font-size: 12px;" class="dropdown">

@@ -22,7 +22,7 @@ use App\Http\Controllers\EstadisticasController;
 use App\Http\Controllers\ReportePDFController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Auth::routes();

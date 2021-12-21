@@ -56,7 +56,7 @@
             <th scope="col" style="width: 35%;"> Involucrado</th>
             <th scope="col" style="width: 20%;"> Incapacidad / Consecuencia</th>
             <th scope="col" style="width: 5%;"> Editar</th>
-            <th scope="col" style="width: 5%;"> Ver</th>
+            <!-- <th scope="col" style="width: 5%;"> Ver</th> -->
             <th scope="col" style="width: 5%; "> PDF</th>
         </tr>
     </thead>
@@ -78,9 +78,9 @@
             <td style="width: 5%; text-align: center;" class="align-middle">
                 <a href="{{ url('/registroAccidente/'.$registro->id.'/edit') }}" style="text-align: center;" class="buttonTable"> <i class="fas fa-upload"></i> </a>
             </td>
-            <td style="width: 5%; text-align: center;" class="align-middle">
+            <!-- <td style="width: 5%; text-align: center;" class="align-middle">
                 <a href="https://drive.google.com/drive/u/1/folders/1gKCI2ZA-e2nT0WTxWMtEg4lHQvdxn7HY" target="_blank" style="text-align: center;" class="buttonTable"> <i class="fab fa-google-drive"></i> </a>
-            </td>
+            </td> -->
             <td style="width: 5%; text-align: center;" class="align-middle">
                 <a href="{{ url('/viewPdf/'.$registro->id) }}" target="_blank" style="text-align: center;" class="buttonTable"> <i class="fas fa-file-download"></i> </a>
             </td>
