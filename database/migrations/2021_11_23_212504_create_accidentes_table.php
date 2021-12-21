@@ -56,11 +56,11 @@ class CreateAccidentesTable extends Migration
             $table->string('form2Hora')->nullable(); //
             $table->string('form2Turno')->nullable(); //
             $table->string('form2HorasTrabajo')->nullable(); //
-            $table->string('form2LugarAtencion')->nullable(); //
+            $table->text('form2LugarAtencion')->nullable(); //
 
             $table->string('form3TipoRiesgo')->nullable(); //
             $table->string('form3ActoInseguro')->nullable(); //
-            $table->string('form3DescribaCausa')->nullable(); //
+            $table->text('form3DescribaCausa')->nullable(); //
             $table->string('form3CondicionesInseguras')->nullable(); //
             $table->string('form3FactorPersonal')->nullable(); //
             $table->string('form3Estado')->nullable(); //
@@ -68,10 +68,10 @@ class CreateAccidentesTable extends Migration
             $table->string('form3RegistroAnalista')->nullable(); //
 
             $table->string('form4TipoIncapacidad')->nullable(); //
-            $table->string('form4DiagnosticoInicial')->nullable(); //
-            $table->string('form4TratamientoInicial')->nullable(); //
-            $table->string('form4DiagnosticoDependencia')->nullable(); //
-            $table->string('form4TratamientoDependencia')->nullable(); //
+            $table->text('form4DiagnosticoInicial')->nullable(); //
+            $table->text('form4TratamientoInicial')->nullable(); //
+            $table->text('form4DiagnosticoDependencia')->nullable(); //
+            $table->text('form4TratamientoDependencia')->nullable(); //
             $table->string('form4DiasIncapacidad')->nullable(); //
             $table->string('form4ImporteCuracion')->nullable(); //
             
@@ -154,10 +154,10 @@ class CreateAccidentesTable extends Migration
             $table->string('form5CostosIndirectosEquiposTrabajador')->nullable(); //
             $table->string('form5CostosIndirectosSubTotalCorrectivas')->nullable(); //
             
-            $table->string('form6Ingenieria')->nullable(); //
-            $table->string('form6Administrativa')->nullable(); //
-            $table->string('form6Segumiento')->nullable(); //
-            $table->string('form6Capacitacion')->nullable(); //
+            $table->text('form6Ingenieria')->nullable(); //
+            $table->text('form6Administrativa')->nullable(); //
+            $table->text('form6Segumiento')->nullable(); //
+            $table->text('form6Capacitacion')->nullable(); //
             
             $table->timestamps();
         });
