@@ -82,7 +82,7 @@
                                 <a href="#" class="sub-menu-toggle"></i> {{ __('Registro    ') }} <span class="caret"><i class="fas fa-user-plus"></i></span></a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="/registroAccidente/create" style="cursor: pointer">{{ __('Accidente     ') }}<i class="fas fa-stopwatch"></i></a>
+                                        <a href="/registroAccidente/create" style="cursor: pointer">{{ __('Accidente     ') }}<i class="fas fa-user-injured"></i></a>
                                     </li>
                                     <li>
                                         <a href="/registroIncidente/create" style="cursor: pointer">{{ __('Incidente     ') }}<i class="fas fa-plus-circle"></i></a>

@@ -25,7 +25,7 @@
                 <div class="form-group col">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <strong>
-                            <h3> <i class="fas fa-stopwatch fa-2x"></i> Accidentes </h3>
+                            <h3> <i class="fas fa-user-injured fa-2x"></i> Accidentes </h3>
                         </strong>
                     </button>
                 </div>
