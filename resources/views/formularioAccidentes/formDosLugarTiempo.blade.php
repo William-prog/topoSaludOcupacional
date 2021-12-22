@@ -76,8 +76,8 @@
             <div class="col">
                 <label for="form2LugarAtencion">Lugar donde recibió atención médica el accidentado: </label>
                 <textarea name="form2LugarAtencion" id="form2LugarAtencion" class="form-control" rows="3">
-                    {{isset($registroAccidente->form2LugarAtencion)?$registroAccidente->form2LugarAtencion:''}
-                }</textarea>
+                    {{isset($registroAccidente->form2LugarAtencion)?$registroAccidente->form2LugarAtencion:''}}
+                </textarea>
             </div>
         </div>
     </div>
