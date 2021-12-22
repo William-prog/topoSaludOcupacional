@@ -27,6 +27,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/call', [AccidenteController::class, 'fetchEmployee']);
+
 Route::resource('registroAccidente', AccidenteController::class);
 Route::resource('registroIncidente', IncidenteController::class);
 

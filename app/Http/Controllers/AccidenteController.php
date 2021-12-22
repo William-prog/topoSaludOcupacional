@@ -3,10 +3,68 @@
 namespace App\Http\Controllers;
 
 use App\Models\accidente;
+use App\Models\empleados;
+
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class AccidenteController extends Controller
 {
+
+    public function fetchEmployee(Request $request)
+    {
+        if ($request->ajax()) {
+            $query = $request->get('query');
+            if ($query != '' && empleados::where('employeeNumberEmployee', '=', $query)->exists()) {
+                $response = DB::table('employees')->where('employeeNumberEmployee', 'like', $query)->get();
+                $data = $response;
+                foreach ($data as $key) {
+                    $info = array(
+                        'employeeName' => $key->employeeName,
+                        'employeeLastNameP' => $key->employeeLastNameP,
+                        'employeeLastNameM' => $key->employeeLastNameM,
+                        'employeeRfc' => $key->employeeRfc,
+                        'employeeCurp' => $key->employeeCurp,
+                        'employeeNss' => $key->employeeNss,
+                        'employeeAdmissionDate' => $key->employeeAdmissionDate,
+                        'employeePosition' => $key->employeePosition,
+
+                        'employeeCP' => $key->employeeCP,
+                        'employeeNumberHouse' => $key->employeeNumberHouse,
+                        'employeeStreet' => $key->employeeStreet,
+                        'employeeColoni' => $key->employeeColoni,
+                        'employeeMunicipio' => $key->employeeMunicipio,
+                        'employeeEstado' => $key->employeeEstado
+                    );
+                }
+                echo json_encode($info);
+            } else {
+
+                if (strlen($query) == 3) {
+                    echo json_encode("NO HAY EMPLEADO REALACIONADO");
+
+                    $info = array(
+                        'employeeName1' => '',
+                        'employeeLastNameP' => '',
+                        'employeeLastNameM' => '',
+                        'employeeRfc' => '',
+                        'employeeCurp' => '',
+                        'employeeNss' => '',
+                        'employeeAdmissionDate' => '',
+                        'employeePosition' => '',
+
+                        'employeeCP' => '',
+                        'employeeNumberHouse' => '',
+                        'employeeStreet' => '',
+                        'employeeColoni' => '',
+                        'employeeMunicipio' => '',
+                        'employeeEstado' => '',
+                    );
+                }
+            }
+        }
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -210,7 +268,6 @@ class AccidenteController extends Controller
     {
         $registroAccidente = accidente::findOrFail($id);
         return view('registroAccidente.edit', compact('registroAccidente'));
-
     }
 
     /**
@@ -222,9 +279,9 @@ class AccidenteController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $datosEmpleado = request()->except(['_token','_method']);
+        $datosEmpleado = request()->except(['_token', '_method']);
         accidente::where('id', '=', $id)->update($datosEmpleado);
-        
+
         $registroAccidente = accidente::all();
         return view('registroAccidente.index', compact('registroAccidente'));
     }
