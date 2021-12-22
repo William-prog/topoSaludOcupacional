@@ -83,7 +83,7 @@
                 <label for="form5CostosDirectos">Costos directos:</label>
             </th>
             <th scope="col">
-                <input readonly="readonly" name="form5CostosDirectos" id="form5CostosDirectos" class="form-control" type="number" onchange="" value="{{isset($registroAccidente->form5CostosDirectos)?$registroAccidente->form5CostosDirectos:''}}">
+                <input  name="form5CostosDirectos" id="form5CostosDirectos" class="form-control" type="number" onchange="" value="{{isset($registroAccidente->form5CostosDirectos)?$registroAccidente->form5CostosDirectos:''}}">
             </th>
         </tr>
     </thead>
@@ -103,7 +103,7 @@
                 <input name="form5CostosDirectosTiempoCostos" id="form5CostosDirectosTiempoCostos" class="form-control" type="number" onkeyup="SumarTiempoDeLaborar(); cambioheader();" value="{{isset($registroAccidente->form5CostosDirectosTiempoCostos)?$registroAccidente->form5CostosDirectosTiempoCostos:''}}">
             </td>
             <td>
-                <input name="form5CostosDirectosTiempoTrabajador" id="form5CostosDirectosTiempoTrabajador" class="form-control" type="number" readonly="readonly" value="{{isset($registroAccidente->form5CostosDirectosTiempoTrabajador)?$registroAccidente->form5CostosDirectosTiempoTrabajador:''}}">
+                <input name="form5CostosDirectosTiempoTrabajador" id="form5CostosDirectosTiempoTrabajador" class="form-control" type="number"  value="{{isset($registroAccidente->form5CostosDirectosTiempoTrabajador)?$registroAccidente->form5CostosDirectosTiempoTrabajador:''}}">
             </td>
         </tr>
         <tr>
@@ -115,7 +115,7 @@
                 <input value="{{isset($registroAccidente->form5CostosDirectosIncapacidadCostos)?$registroAccidente->form5CostosDirectosIncapacidadCostos:''}}" name="form5CostosDirectosIncapacidadCostos" id="form5CostosDirectosIncapacidadCostos" class="form-control" type="number" onkeyup="SumarIncapacidadTemporal(); cambioheader();">
             </td>
             <td>
-                <input value="{{isset($registroAccidente->form5CostosDirectosIncapacidadTrabajador)?$registroAccidente->form5CostosDirectosIncapacidadTrabajador:''}}" name="form5CostosDirectosIncapacidadTrabajador" id="form5CostosDirectosIncapacidadTrabajador" class="form-control" type="number" readonly="readonly">
+                <input value="{{isset($registroAccidente->form5CostosDirectosIncapacidadTrabajador)?$registroAccidente->form5CostosDirectosIncapacidadTrabajador:''}}" name="form5CostosDirectosIncapacidadTrabajador" id="form5CostosDirectosIncapacidadTrabajador" class="form-control" type="number" >
             </td>
         </tr>
         <tr>
@@ -127,7 +127,7 @@
                 <input value="{{isset($registroAccidente->form5CostosDirectosIndemnizacionCostos)?$registroAccidente->form5CostosDirectosIndemnizacionCostos:''}}" name="form5CostosDirectosIndemnizacionCostos" id="form5CostosDirectosIndemnizacionCostos" class="form-control" type="number" onkeyup="SumarIndemnizacionIpp(); cambioheader();">
             </td>
             <td>
-                <input value="{{isset($registroAccidente->form5CostosDirectosIndemnizacionTrabajador)?$registroAccidente->form5CostosDirectosIndemnizacionTrabajador:''}}" name="form5CostosDirectosIndemnizacionTrabajador" id="form5CostosDirectosIndemnizacionTrabajador" class="form-control" type="number" readonly="readonly">
+                <input value="{{isset($registroAccidente->form5CostosDirectosIndemnizacionTrabajador)?$registroAccidente->form5CostosDirectosIndemnizacionTrabajador:''}}" name="form5CostosDirectosIndemnizacionTrabajador" id="form5CostosDirectosIndemnizacionTrabajador" class="form-control" type="number" >
             </td>
         </tr>
         <tr>
@@ -139,7 +139,7 @@
                 <input value="{{isset($registroAccidente->form5CostosDirectosOtrosCostos)?$registroAccidente->form5CostosDirectosOtrosCostos:''}}" name="form5CostosDirectosOtrosCostos" id="form5CostosDirectosOtrosCostos" class="form-control" type="number" onkeyup="SumarOtrosGastos(); cambioheader();">
             </td>
             <td>
-                <input value="{{isset($registroAccidente->form5CostosDirectosOtrosTrabajador)?$registroAccidente->form5CostosDirectosOtrosTrabajador:''}}" name="form5CostosDirectosOtrosTrabajador" id="form5CostosDirectosOtrosTrabajador" class="form-control" type="number" readonly="readonly">
+                <input value="{{isset($registroAccidente->form5CostosDirectosOtrosTrabajador)?$registroAccidente->form5CostosDirectosOtrosTrabajador:''}}" name="form5CostosDirectosOtrosTrabajador" id="form5CostosDirectosOtrosTrabajador" class="form-control" type="number" >
             </td>
         </tr>
         <script>
@@ -152,7 +152,7 @@
                 Subtotal
             </th>
             <td>
-                <input value="{{isset($registroAccidente->form5CostosDirectosTotal)?$registroAccidente->form5CostosDirectosTotal:''}}" name="form5CostosDirectosTotal" id="form5CostosDirectosTotal" class="form-control" type="number" readonly="readonly">
+                <input value="{{isset($registroAccidente->form5CostosDirectosTotal)?$registroAccidente->form5CostosDirectosTotal:''}}" name="form5CostosDirectosTotal" id="form5CostosDirectosTotal" class="form-control" type="number" >
             </td>
         </tr>
     </tbody>
@@ -176,7 +176,7 @@
             <input value="{{isset($registroAccidente->form5CostosDirectosIndemnizacionMuerteCostos)?$registroAccidente->form5CostosDirectosIndemnizacionMuerteCostos:''}}" name="form5CostosDirectosIndemnizacionMuerteCostos" id="form5CostosDirectosIndemnizacionMuerteCostos" class="form-control" type="number" onkeyup="SumarIndemnizacion(); cambioheader();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosDirectosIndemnizacionMuerteTrabajador)?$registroAccidente->form5CostosDirectosIndemnizacionMuerteTrabajador:''}}" name="form5CostosDirectosIndemnizacionMuerteTrabajador" id="form5CostosDirectosIndemnizacionMuerteTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosDirectosIndemnizacionMuerteTrabajador)?$registroAccidente->form5CostosDirectosIndemnizacionMuerteTrabajador:''}}" name="form5CostosDirectosIndemnizacionMuerteTrabajador" id="form5CostosDirectosIndemnizacionMuerteTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -188,7 +188,7 @@
             <input value="{{isset($registroAccidente->form5CostosDirectosGastosFunerariosCostos)?$registroAccidente->form5CostosDirectosGastosFunerariosCostos:''}}" name="form5CostosDirectosGastosFunerariosCostos" id="form5CostosDirectosGastosFunerariosCostos" class="form-control" type="number" onkeyup="SumarFunerarios(); cambioheader();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosDirectosGastosFunerariosTrabajador)?$registroAccidente->form5CostosDirectosGastosFunerariosTrabajador:''}}" name="form5CostosDirectosGastosFunerariosTrabajador" id="form5CostosDirectosGastosFunerariosTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosDirectosGastosFunerariosTrabajador)?$registroAccidente->form5CostosDirectosGastosFunerariosTrabajador:''}}" name="form5CostosDirectosGastosFunerariosTrabajador" id="form5CostosDirectosGastosFunerariosTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <script>
@@ -203,7 +203,7 @@
             <input value="{{isset($registroAccidente->form5CostosDirectosOtrosMuerteCostos)?$registroAccidente->form5CostosDirectosOtrosMuerteCostos:''}}" name="form5CostosDirectosOtrosMuerteCostos" id="form5CostosDirectosOtrosMuerteCostos" class="form-control" type="number" onkeyup="SumarOtros(); cambioheader();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosDirectosOtrosMuerteTrabajador)?$registroAccidente->form5CostosDirectosOtrosMuerteTrabajador:''}}" name="form5CostosDirectosOtrosMuerteTrabajador" id="form5CostosDirectosOtrosMuerteTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosDirectosOtrosMuerteTrabajador)?$registroAccidente->form5CostosDirectosOtrosMuerteTrabajador:''}}" name="form5CostosDirectosOtrosMuerteTrabajador" id="form5CostosDirectosOtrosMuerteTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -211,7 +211,7 @@
         <td></td>
         <th scope="row" style="color: #000; font-size: 20px;">Subtotal</th>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosDirectosTotalMuerte)?$registroAccidente->form5CostosDirectosTotalMuerte:''}}" name="form5CostosDirectosTotalMuerte" id="form5CostosDirectosTotalMuerte" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosDirectosTotalMuerte)?$registroAccidente->form5CostosDirectosTotalMuerte:''}}" name="form5CostosDirectosTotalMuerte" id="form5CostosDirectosTotalMuerte" class="form-control" type="number" >
         </td>
     </tr>
 </table>
@@ -226,7 +226,7 @@
     <div class="row mt-2">
         <div class="form-group col-4">
             <label for="form5CostosIndirectos">Costos indirectos: </label>
-            <input value="{{isset($registroAccidente->form5CostosIndirectos)?$registroAccidente->form5CostosIndirectos:''}}" name="form5CostosIndirectos" id="form5CostosIndirectos" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectos)?$registroAccidente->form5CostosIndirectos:''}}" name="form5CostosIndirectos" id="form5CostosIndirectos" class="form-control" type="number" >
         </div>
     </div>
 </div>
@@ -249,7 +249,7 @@
             <input value="{{isset($registroAccidente->form5CostosIndirectosMaquinariaCostos)?$registroAccidente->form5CostosIndirectosMaquinariaCostos:''}}" name="form5CostosIndirectosMaquinariaCostos" id="form5CostosIndirectosMaquinariaCostos" class="form-control" type="number" onkeyup="SumarMaquinariaAseguranza(); cambioheaderindi();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosMaquinariaTrabajador)?$registroAccidente->form5CostosIndirectosMaquinariaTrabajador:''}}" name="form5CostosIndirectosMaquinariaTrabajador" id="form5CostosIndirectosMaquinariaTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosMaquinariaTrabajador)?$registroAccidente->form5CostosIndirectosMaquinariaTrabajador:''}}" name="form5CostosIndirectosMaquinariaTrabajador" id="form5CostosIndirectosMaquinariaTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -261,7 +261,7 @@
             <input value="{{isset($registroAccidente->form5CostosIndirectosEquipoCostos)?$registroAccidente->form5CostosIndirectosEquipoCostos:''}}" name="form5CostosIndirectosEquipoCostos" id="form5CostosIndirectosEquipoCostos" class="form-control" type="number" onkeyup="SumarEquipo(); cambioheaderindi();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosEquipoTrabajador)?$registroAccidente->form5CostosIndirectosEquipoTrabajador:''}}" name="form5CostosIndirectosEquipoTrabajador" id="form5CostosIndirectosEquipoTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosEquipoTrabajador)?$registroAccidente->form5CostosIndirectosEquipoTrabajador:''}}" name="form5CostosIndirectosEquipoTrabajador" id="form5CostosIndirectosEquipoTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -273,7 +273,7 @@
             <input value="{{isset($registroAccidente->form5CostosIndirectosProductoCostos)?$registroAccidente->form5CostosIndirectosProductoCostos:''}}" name="form5CostosIndirectosProductoCostos" id="form5CostosIndirectosProductoCostos" class="form-control" type="number" onkeyup="SumarProducto(); cambioheaderindi();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosProductoTrabajador)?$registroAccidente->form5CostosIndirectosProductoTrabajador:''}}" name="form5CostosIndirectosProductoTrabajador" id="form5CostosIndirectosProductoTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosProductoTrabajador)?$registroAccidente->form5CostosIndirectosProductoTrabajador:''}}" name="form5CostosIndirectosProductoTrabajador" id="form5CostosIndirectosProductoTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -281,7 +281,7 @@
         <td></td>
         <th scope="row" style="color: #000; font-size: 20px;">Subtotal</th>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosSubTotalAseguranza)?$registroAccidente->form5CostosIndirectosSubTotalAseguranza:''}}" name="form5CostosIndirectosSubTotalAseguranza" id="form5CostosIndirectosSubTotalAseguranza" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosSubTotalAseguranza)?$registroAccidente->form5CostosIndirectosSubTotalAseguranza:''}}" name="form5CostosIndirectosSubTotalAseguranza" id="form5CostosIndirectosSubTotalAseguranza" class="form-control" type="number" >
         </td>
     </tr>
 </table>
@@ -304,7 +304,7 @@
             <input value="{{isset($registroAccidente->form5CostosIndirectosRecursosHumanosCostos)?$registroAccidente->form5CostosIndirectosRecursosHumanosCostos:''}}" name="form5CostosIndirectosRecursosHumanosCostos" id="form5CostosIndirectosRecursosHumanosCostos" class="form-control" type="number" onkeyup="SumarMaquinaria(); cambioheaderindi();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosRecursosHumanosTrabajador)?$registroAccidente->form5CostosIndirectosRecursosHumanosTrabajador:''}}" name="form5CostosIndirectosRecursosHumanosTrabajador" id="form5CostosIndirectosRecursosHumanosTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosRecursosHumanosTrabajador)?$registroAccidente->form5CostosIndirectosRecursosHumanosTrabajador:''}}" name="form5CostosIndirectosRecursosHumanosTrabajador" id="form5CostosIndirectosRecursosHumanosTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -316,7 +316,7 @@
             <input value="{{isset($registroAccidente->form5CostosIndirectosMaterialesCostos)?$registroAccidente->form5CostosIndirectosMaterialesCostos:''}}" name="form5CostosIndirectosMaterialesCostos" id="form5CostosIndirectosMaterialesCostos" class="form-control" type="number" onkeyup="SumarMateriales(); cambioheaderindi();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosMaterialesTrabajador)?$registroAccidente->form5CostosIndirectosMaterialesTrabajador:''}}" name="form5CostosIndirectosMaterialesTrabajador" id="form5CostosIndirectosMaterialesTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosMaterialesTrabajador)?$registroAccidente->form5CostosIndirectosMaterialesTrabajador:''}}" name="form5CostosIndirectosMaterialesTrabajador" id="form5CostosIndirectosMaterialesTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -328,7 +328,7 @@
             <input value="{{isset($registroAccidente->form5CostosIndirectosEquiposCostos)?$registroAccidente->form5CostosIndirectosEquiposCostos:''}}" name="form5CostosIndirectosEquiposCostos" id="form5CostosIndirectosEquiposCostos" class="form-control" type="number" onkeyup="SumarEquipos(); cambioheaderindi();">
         </td>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosEquiposTrabajador)?$registroAccidente->form5CostosIndirectosEquiposTrabajador:''}}" name="form5CostosIndirectosEquiposTrabajador" id="form5CostosIndirectosEquiposTrabajador" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosEquiposTrabajador)?$registroAccidente->form5CostosIndirectosEquiposTrabajador:''}}" name="form5CostosIndirectosEquiposTrabajador" id="form5CostosIndirectosEquiposTrabajador" class="form-control" type="number" >
         </td>
     </tr>
     <tr>
@@ -336,7 +336,7 @@
         <td></td>
         <th scope="row" style="color: #000; font-size: 20px;">Subtotal</th>
         <td>
-            <input value="{{isset($registroAccidente->form5CostosIndirectosSubTotalCorrectivas)?$registroAccidente->form5CostosIndirectosSubTotalCorrectivas:''}}" name="form5CostosIndirectosSubTotalCorrectivas" id="form5CostosIndirectosSubTotalCorrectivas" class="form-control" type="number" readonly="readonly">
+            <input value="{{isset($registroAccidente->form5CostosIndirectosSubTotalCorrectivas)?$registroAccidente->form5CostosIndirectosSubTotalCorrectivas:''}}" name="form5CostosIndirectosSubTotalCorrectivas" id="form5CostosIndirectosSubTotalCorrectivas" class="form-control" type="number" >
         </td>
     </tr>
 </table>
