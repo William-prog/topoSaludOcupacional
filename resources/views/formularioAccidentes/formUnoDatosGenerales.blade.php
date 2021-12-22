@@ -86,17 +86,17 @@
                             showConfirmButton: true,
                         });
 
-                        document.getElementById('involvedName1').value = '';
-                        document.getElementById('involvedSurname1').value = '';
-                        document.getElementById('involvedSurnameM1').value = '';
-                        document.getElementById('involvedRFC1').value = '';
-                        document.getElementById('involvedCurp1').value = '';
-                        document.getElementById('involvedNumber1').value = '';
-                        document.getElementById('involvedSeniorityCompany1').value = '';
-                        document.getElementById('involvedHabitualOccupation1').value = '';
-                        document.getElementById('involvedOccupationPerformed1').value = '';
+                        document.getElementById('form1Nombre').value = '';
+                        document.getElementById('form1PrimerApellido').value = '';
+                        document.getElementById('form1SegundoApellido').value = '';
+                        document.getElementById('form1Rfc').value = '';
+                        document.getElementById('form1Curp').value = '';
+                        document.getElementById('form1Telefono').value = '';
+                        document.getElementById('form1AntiguedadEmpresa').value = '';
+                        document.getElementById('form1OcupacionHabitual').value = '';
+                        document.getElementById('form1AntiguedadPuesto').value = '';
                         // 
-                        document.getElementById('involvedCode1').value = '';
+                        document.getElementById('form1CodigoPostal').value = '';
                         document.getElementById('form1Numero').value = '';
                         document.getElementById('form1Calle').value = '';
                         document.getElementById('form1Colonia').value = '';
@@ -104,16 +104,16 @@
                         document.getElementById('form1MunicipioEntidadFederativa').value = '';
                     } else {
                         document.getElementById('involvedName1').value = data.employeeName;
-                        document.getElementById('involvedSurname1').value = data.employeeLastNameP;
-                        document.getElementById('involvedSurnameM1').value = data.employeeLastNameM;
-                        document.getElementById('involvedRFC1').value = data.employeeRfc;
-                        document.getElementById('involvedCurp1').value = data.employeeCurp;
-                        document.getElementById('involvedNumber1').value = data.employeeNss;
-                        document.getElementById('involvedSeniorityCompany1').value = data.employeeAdmissionDate;
-                        document.getElementById('involvedHabitualOccupation1').value = data.employeePosition;
-                        document.getElementById('involvedOccupationPerformed1').value = data.employeePosition;
+                        document.getElementById('form1PrimerApellido').value = data.employeeLastNameP;
+                        document.getElementById('form1SegundoApellido').value = data.employeeLastNameM;
+                        document.getElementById('form1Rfc').value = data.employeeRfc;
+                        document.getElementById('form1Curp').value = data.employeeCurp;
+                        document.getElementById('form1Telefono').value = data.employeeNss;
+                        document.getElementById('form1AntiguedadEmpresa').value = data.employeeAdmissionDate;
+                        document.getElementById('form1OcupacionHabitual').value = data.employeePosition;
+                        document.getElementById('form1AntiguedadPuesto').value = data.employeePosition;
                         // 
-                        document.getElementById('involvedCode1').value = data.employeeCP;
+                        document.getElementById('form1CodigoPostal').value = data.employeeCP;
                         document.getElementById('form1Numero').value = data.employeeNumberHouse;
                         document.getElementById('form1Calle').value = data.employeeStreet;
                         document.getElementById('form1Colonia').value = data.employeeColoni;

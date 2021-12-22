@@ -16,7 +16,7 @@ class AccidenteController extends Controller
         if ($request->ajax()) {
             $query = $request->get('query');
             if ($query != '' && empleados::where('employeeNumberEmployee', '=', $query)->exists()) {
-                $response = DB::table('employees')->where('employeeNumberEmployee', 'like', $query)->get();
+                $response = DB::table('empleados')->where('employeeNumberEmployee', 'like', $query)->get();
                 $data = $response;
                 foreach ($data as $key) {
                     $info = array(
