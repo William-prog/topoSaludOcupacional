@@ -15,8 +15,8 @@ class InformesController extends Controller
      */
     public function index()
     {
-        $registroAccidente = accidente::all();
-        $registroIncidente = incidente::all();
+        $registroAccidente = accidente::orderBy('form2Fecha', 'desc')->get();
+        $registroIncidente = incidente::orderBy('form2Fecha', 'desc')->get();
         return view('informes.index', compact('registroAccidente', 'registroIncidente'));
     }
 }
