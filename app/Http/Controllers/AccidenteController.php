@@ -243,7 +243,7 @@ class AccidenteController extends Controller
 
         $accidente->save();
 
-        $registroAccidente = accidente::all();
+        $registroAccidente = accidente::orderBy('form2Fecha', 'asc')->get();
         return view('registroAccidente.index', compact('registroAccidente'));
     }
 
