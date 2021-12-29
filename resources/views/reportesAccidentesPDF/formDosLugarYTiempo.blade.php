@@ -27,7 +27,7 @@
             <!-- Fecha en que ocurrió el accidente -->
             <?php
                 date_default_timezone_set("America/Mexico_City");
-                setlocale(LC_TIME, 'es_VE.UTF-8', 'esp');
+                setlocale(LC_TIME, 'es_ES', 'Spanish_Spain', 'Spanish');
                 $data['Fecha'] = $dato->form2Fecha;
                 $marca = strtotime($data['Fecha']);
                 ?>
