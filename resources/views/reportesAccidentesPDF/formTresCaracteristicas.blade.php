@@ -1,7 +1,7 @@
 @foreach($registro as $dato)
 <table width="100%" border="1" cellpadding="0" cellspacing="1" bordercolor="#000000" style="border-collapse:collapse; border-color:#ddd; vertical-align:text-top;">
     <tr>
-        <td class="encabezado" colspan="2">IV. Características</td>
+        <td class="encabezado" colspan="2">III. Características</td>
     </tr>
     <tr class="subencabezado">
         <td>
