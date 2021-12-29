@@ -58,7 +58,7 @@
                 $data['Fecha'] = $registro->form2Fecha;
                 $marca = strtotime($data['Fecha']);
                 ?>
-                <?= strftime('%e/%B/%Y', $marca) ?>
+                <?= strftime('%B/%e/%Y', $marca) ?>
             </td>
             <td style="width: 35%;">
                 {{$registro->form1Nombre}} {{$registro->form1PrimerApellido}} {{$registro->form1SegundoApellido}}
