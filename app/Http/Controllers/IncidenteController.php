@@ -59,7 +59,7 @@ class IncidenteController extends Controller
         $incidente->form1AntiguedadEmpresa = $request->input('form1AntiguedadEmpresa', '--');
         $incidente->form1AntiguedadPuesto = $request->input('form1AntiguedadPuesto', '--');
         $incidente->form1OcupacionHabitual = $request->input('form1OcupacionHabitual', '--');
-        $incidente->form1OcupacionDesempenaba = $request->input('form1OcupacionDesempeñaba', '--');
+        $incidente->form1OcupacionDesempeñaba = $request->input('form1OcupacionDesempeñaba', '--');
         $incidente->form1ClaseTrabajador = $request->input('form1ClaseTrabajador', '--');
         $incidente->form1NumeroSeguro = $request->input('form1NumeroSeguro', '--');
         $incidente->form1NumeroAfiliacion = $request->input('form1NumeroAfiliacion', '--');
@@ -117,7 +117,7 @@ class IncidenteController extends Controller
         $incidente->form5HorasHombresInvolucrado = $request->input('form5HorasHombresInvolucrado', '--');
         $incidente->form5HorasHombresProceso = $request->input('form5HorasHombresProceso', '--');
         $incidente->form5ImporteSalarios = $request->input('form5ImporteSalarios', '--');
-        $incidente->form5ImporteDanos = $request->input('form5ImporteDaños', '--');
+        $incidente->form5ImporteDaños = $request->input('form5ImporteDaños', '--');
         $incidente->form5Indemnizacion = $request->input('form5Indemnizacion', '--');
         $incidente->form5ImporteIndemnizacion = $request->input('form5ImporteIndemnizacion', '--');
         $incidente->form5AumentoPrima = $request->input('form5AumentoPrima', '--');

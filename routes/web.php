@@ -35,4 +35,10 @@ Route::resource('registroIncidente', IncidenteController::class);
 Route::resource('informes', InformesController::class);
 Route::resource('estadisticas', EstadisticasController::class);
 
+// GENERAR REPORTE
+Route::get('/generarReporteAccidente/PDF/{id}', [ReportePDFController::class, 'generarReporteAccidente']);
+Route::get('/generarReporteIncidente/PDF/{id}', [ReportePDFController::class, 'generarReporteIncidente']);
+
+
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
