@@ -48,10 +48,10 @@
     <div class="form-group col">
         <select name="form5Indemnizacion" id="form5Indemnizacion" class="form-control">
             <option value="">Seleccione..</option>
-            <option {{ isset($registroAccidente->form5Indemnizacion) == 'La empresa' ? 'selected' : '' }} value="La empresa">La empresa</option>
-            <option {{ isset($registroAccidente->form5Indemnizacion) == 'El seguro' ? 'selected' : '' }} value="El seguro">El seguro</option>
-            <option {{ isset($registroAccidente->form5Indemnizacion) == 'Total permanente' ? 'selected' : '' }} value="Total permanente">Total permanente</option>
-            <option {{ isset($registroAccidente->form5Indemnizacion) == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+            <option {{ isset($registroAccidente->form5Indemnizacion) === 'La empresa' ? 'selected' : '' }} value="La empresa">La empresa</option>
+            <option {{ isset($registroAccidente->form5Indemnizacion) === 'El seguro' ? 'selected' : '' }} value="El seguro">El seguro</option>
+            <option {{ isset($registroAccidente->form5Indemnizacion) === 'Total permanente' ? 'selected' : '' }} value="Total permanente">Total permanente</option>
+            <option {{ isset($registroAccidente->form5Indemnizacion) === 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
         </select>
     </div>
 </div>

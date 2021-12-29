@@ -10,7 +10,6 @@
     </tr>
     <tr class="info">
         <td>
-            <!-- Acciones de ingeniería en el área de trabajo: -->
             {{$dato->form6Ingenieria}}
         </td>
     </tr>

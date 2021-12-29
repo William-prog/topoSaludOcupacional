@@ -52,7 +52,7 @@ class CreateAccidentesTable extends Migration
             $table->string('form1MunicipioEntidadFederativa')->nullable(); //
 
             $table->string('form2LugarEvento')->nullable(); //
-            $table->string('form2Fecha')->nullable(); //
+            $table->dateTime('form2Fecha')->nullable(); //
             $table->string('form2Hora')->nullable(); //
             $table->string('form2Turno')->nullable(); //
             $table->string('form2HorasTrabajo')->nullable(); //

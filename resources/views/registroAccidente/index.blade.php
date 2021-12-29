@@ -84,9 +84,6 @@
                 <td style="width: 5%; text-align: center;" class="align-middle">
                     <a href="{{ url('/registroAccidente/'.$registro->id.'/edit') }}" style="text-align: center;" class="buttonTable"> <i class="fas fa-upload"></i> </a>
                 </td>
-                <!-- <td style="width: 5%; text-align: center;" class="align-middle">
-                <a href="https://drive.google.com/drive/u/1/folders/1gKCI2ZA-e2nT0WTxWMtEg4lHQvdxn7HY" target="_blank" style="text-align: center;" class="buttonTable"> <i class="fab fa-google-drive"></i> </a>
-            </td> -->
                 <td style="width: 5%; text-align: center;" class="align-middle">
                     <a href="{{ url('/generarReporteAccidente/PDF/'.$registro->id) }}" target="_blank" style="text-align: center;" class="buttonTable"> <i class="fas fa-file-download"></i> </a>
                 </td>

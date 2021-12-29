@@ -166,10 +166,10 @@
             <div class="col">
                 <label for="form1Lugar">Lugar: </label>
                 <select name="form1Lugar" id="form1Lugar" class="form-control">
-                    <option {{ isset($registroAccidente->form1Lugar) == 'Centro de servicios TOPO' ? 'selected' : '' }} value="Centro de servicios TOPO">Centro de servicios TOPO</option>
-                    <option {{ isset($registroAccidente->form1Lugar) == 'Proyecto MDM 5000' ? 'selected' : '' }} value="Proyecto MDM 5000">Proyecto MDM 5000</option>
-                    <option {{ isset($registroAccidente->form1Lugar) == 'Servicio de transporte de personal' ? 'selected' : '' }} value="Servicio de transporte de personal">Servicio de transporte de personal</option>
-                    <option {{ isset($registroAccidente->form1Lugar) == 'Servicio de translado de personal por ascensor' ? 'selected' : '' }} value="Servicio de translado de personal por ascensor">Servicio de translado de personal por ascensor</option>
+                    <option {{ isset($registroAccidente->form1Lugar) === 'Centro de servicios TOPO' ? 'selected' : '' }} value="Centro de servicios TOPO">Centro de servicios TOPO</option>
+                    <option {{ isset($registroAccidente->form1Lugar) === 'Proyecto MDM 5000' ? 'selected' : '' }} value="Proyecto MDM 5000">Proyecto MDM 5000</option>
+                    <option {{ isset($registroAccidente->form1Lugar) === 'Servicio de transporte de personal' ? 'selected' : '' }} value="Servicio de transporte de personal">Servicio de transporte de personal</option>
+                    <option {{ isset($registroAccidente->form1Lugar) === 'Servicio de translado de personal por ascensor' ? 'selected' : '' }} value="Servicio de translado de personal por ascensor">Servicio de translado de personal por ascensor</option>
                 </select>
             </div>
         </div>
@@ -238,8 +238,8 @@
                 <label for="form1Genero">Genero: </label>
                 <select name="form1Genero" id="form1Genero" class="form-control">
                     <option value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1Genero) == 'Mujer' ? 'selected' : '' }} value="Mujer">Mujer</option>
-                    <option {{ isset($registroAccidente->form1Genero) == 'Hombre' ? 'selected' : '' }} value="Hombre">Hombre</option>
+                    <option {{ isset($registroAccidente->form1Genero) === 'Mujer' ? 'selected' : '' }} value="Mujer">Mujer</option>
+                    <option {{ isset($registroAccidente->form1Genero) === 'Hombre' ? 'selected' : '' }} value="Hombre">Hombre</option>
                 </select>
             </div>
         </div>
@@ -254,13 +254,13 @@
                 <label for="form1EstadoCivil">Estado Civil</label>
                 <select name="form1EstadoCivil" id="form1EstadoCivil" class="form-control">
                     <option value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1EstadoCivil) == 'Casado' ? 'selected' : '' }} value="Casado">Casado</option>
-                    <option {{ isset($registroAccidente->form1EstadoCivil) == 'Soltero' ? 'selected' : '' }} value="Soltero">Soltero</option>
-                    <option {{ isset($registroAccidente->form1EstadoCivil) == 'Divorciado' ? 'selected' : '' }} value="Divorciado">Divorciado</option>
-                    <option {{ isset($registroAccidente->form1EstadoCivil) == 'Viudo' ? 'selected' : '' }} value="Viudo">Viudo</option>
-                    <option {{ isset($registroAccidente->form1EstadoCivil) == 'Unión libre' ? 'selected' : '' }} value="Unión libre">Unión libre</option>
-                    <option {{ isset($registroAccidente->form1EstadoCivil) == 'Sociedad de convivencia' ? 'selected' : '' }} value="Sociedad de convivencia">Sociedad de convivencia</option>
-                    <option {{ isset($registroAccidente->form1EstadoCivil) == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+                    <option {{ isset($registroAccidente->form1EstadoCivil) === 'Casado' ? 'selected' : '' }} value="Casado">Casado</option>
+                    <option {{ isset($registroAccidente->form1EstadoCivil) === 'Soltero' ? 'selected' : '' }} value="Soltero">Soltero</option>
+                    <option {{ isset($registroAccidente->form1EstadoCivil) === 'Divorciado' ? 'selected' : '' }} value="Divorciado">Divorciado</option>
+                    <option {{ isset($registroAccidente->form1EstadoCivil) === 'Viudo' ? 'selected' : '' }} value="Viudo">Viudo</option>
+                    <option {{ isset($registroAccidente->form1EstadoCivil) === 'Unión libre' ? 'selected' : '' }} value="Unión libre">Unión libre</option>
+                    <option {{ isset($registroAccidente->form1EstadoCivil) === 'Sociedad de convivencia' ? 'selected' : '' }} value="Sociedad de convivencia">Sociedad de convivencia</option>
+                    <option {{ isset($registroAccidente->form1EstadoCivil) === 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
                 </select>
             </div>
         </div>
@@ -301,14 +301,14 @@
             <div class="col">
                 <label for="form1NivelEstudios">Nivel máximo de estudios: </label>
                 <select name="form1NivelEstudios" id="form1NivelEstudios" class="form-control">
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == '' ? 'selected' : '' }} value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == 'Primaria' ? 'selected' : '' }} value="Primaria">Primaria</option>
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == 'Secundaria' ? 'selected' : '' }} value="Secundaria">Secundaria</option>
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == 'Preparatoria' ? 'selected' : '' }} value="Preparatoria">Preparatoria</option>
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == 'Universidad' ? 'selected' : '' }} value="Universidad">Universidad</option>
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == 'Licenciatura' ? 'selected' : '' }} value="Licenciatura">Licenciatura</option>
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == 'Maestria' ? 'selected' : '' }} value="Maestria">Maestria</option>
-                    <option {{ isset($registroAccidente->form1NivelEstudios) == 'Doctorado' ? 'selected' : '' }} value="Doctorado">Doctorado</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === '' ? 'selected' : '' }} value="" disabled selected>Seleccionar...</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === 'Primaria' ? 'selected' : '' }} value="Primaria">Primaria</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === 'Secundaria' ? 'selected' : '' }} value="Secundaria">Secundaria</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === 'Preparatoria' ? 'selected' : '' }} value="Preparatoria">Preparatoria</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === 'Universidad' ? 'selected' : '' }} value="Universidad">Universidad</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === 'Licenciatura' ? 'selected' : '' }} value="Licenciatura">Licenciatura</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === 'Maestria' ? 'selected' : '' }} value="Maestria">Maestria</option>
+                    <option {{ isset($registroAccidente->form1NivelEstudios) === 'Doctorado' ? 'selected' : '' }} value="Doctorado">Doctorado</option>
                 </select>
             </div>
         </div>
@@ -325,11 +325,11 @@
                 <label for="form1AntiguedadEmpresa">Antigüedad en la empresa: </label>
                 <select name="form1AntiguedadEmpresa" id="form1AntiguedadEmpresa" class="form-control">
                     <option value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) == '0 - 1 año' ? 'selected' : '' }} value="0 - 1 año">0 - 1 año</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) == '1 - 2 años' ? 'selected' : '' }} value="1 - 2 años">1 - 2 años</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) == '2 - 3 años' ? 'selected' : '' }} value="2 - 3 años">2 - 3 años</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) == '3 - 5 años' ? 'selected' : '' }} value="3 - 5 años">3 - 5 años</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) == '5 o mas años' ? 'selected' : '' }} value="5 o mas años">5 o mas años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) === '0 - 1 año' ? 'selected' : '' }} value="0 - 1 año">0 - 1 año</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) === '1 - 2 años' ? 'selected' : '' }} value="1 - 2 años">1 - 2 años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) === '2 - 3 años' ? 'selected' : '' }} value="2 - 3 años">2 - 3 años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) === '3 - 5 años' ? 'selected' : '' }} value="3 - 5 años">3 - 5 años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadEmpresa) === '5 o mas años' ? 'selected' : '' }} value="5 o mas años">5 o mas años</option>
                 </select>
             </div>
         </div>
@@ -338,11 +338,11 @@
                 <label for="form1AntiguedadPuesto">Antigüedad en el puesto: </label>
                 <select name="form1AntiguedadPuesto" id="form1AntiguedadPuesto" class="form-control">
                     <option value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) == '0 - 1 año' ? 'selected' : '' }} value="0 - 1 año">0 - 1 año</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) == '1 - 2 años' ? 'selected' : '' }} value="1 - 2 años">1 - 2 años</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) == '2 - 3 años' ? 'selected' : '' }} value="2 - 3 años">2 - 3 años</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) == '3 - 5 años' ? 'selected' : '' }} value="3 - 5 años">3 - 5 años</option>
-                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) == '5 o mas años' ? 'selected' : '' }} value="5 o mas años">5 o mas años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) === '0 - 1 año' ? 'selected' : '' }} >0 - 1 año</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) === '1 - 2 años' ? 'selected' : '' }} value="1 - 2 años">1 - 2 años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) === '2 - 3 años' ? 'selected' : '' }} value="2 - 3 años">2 - 3 años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) === '3 - 5 años' ? 'selected' : '' }} value="3 - 5 años">3 - 5 años</option>
+                    <option {{ isset($registroAccidente->form1AntiguedadPuesto) === '5 o mas años' ? 'selected' : '' }} value="5 o mas años">5 o mas años</option>
                 </select>
             </div>
         </div>
@@ -367,12 +367,12 @@
                 <label for="form1ClaseTrabajador">Clase de trabajador:</label>
                 <select name="form1ClaseTrabajador" id="form1ClaseTrabajador" class="form-control">
                     <option value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1ClaseTrabajador) == 'Planta' ? 'selected' : '' }} value="Planta">Planta</option>
-                    <option {{ isset($registroAccidente->form1ClaseTrabajador) == 'Eventual' ? 'selected' : '' }} value="Eventual">Eventual</option>
-                    <option {{ isset($registroAccidente->form1ClaseTrabajador) == 'Confianza' ? 'selected' : '' }} value="Confianza">Confianza</option>
-                    <option {{ isset($registroAccidente->form1ClaseTrabajador) == 'Honorarios' ? 'selected' : '' }} value="Honorarios">Honorarios</option>
-                    <option {{ isset($registroAccidente->form1ClaseTrabajador) == 'Subcontrato' ? 'selected' : '' }} value="Subcontrato">Subcontrato</option>
-                    <option {{ isset($registroAccidente->form1ClaseTrabajador) == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+                    <option {{ isset($registroAccidente->form1ClaseTrabajador) === 'Planta' ? 'selected' : '' }} value="Planta">Planta</option>
+                    <option {{ isset($registroAccidente->form1ClaseTrabajador) === 'Eventual' ? 'selected' : '' }} value="Eventual">Eventual</option>
+                    <option {{ isset($registroAccidente->form1ClaseTrabajador) === 'Confianza' ? 'selected' : '' }} value="Confianza">Confianza</option>
+                    <option {{ isset($registroAccidente->form1ClaseTrabajador) === 'Honorarios' ? 'selected' : '' }} value="Honorarios">Honorarios</option>
+                    <option {{ isset($registroAccidente->form1ClaseTrabajador) === 'Subcontrato' ? 'selected' : '' }} value="Subcontrato">Subcontrato</option>
+                    <option {{ isset($registroAccidente->form1ClaseTrabajador) === 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
                 </select>
             </div>
         </div>
@@ -381,9 +381,9 @@
                 <label for="form1NumeroSeguro">Institución de seguridad social: </label>
                 <select name="form1NumeroSeguro" id="form1NumeroSeguro" class="form-control">
                     <option value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1NumeroSeguro) == 'Seguro Social' ? 'selected' : '' }} value="Seguro Social">Seguro Social</option>
-                    <option {{ isset($registroAccidente->form1NumeroSeguro) == 'IMSS' ? 'selected' : '' }} value="IMSS">IMSS</option>
-                    <option {{ isset($registroAccidente->form1NumeroSeguro) == 'ISSSTE' ? 'selected' : '' }} value="ISSSTE">ISSSTE</option>
+                    <option {{ isset($registroAccidente->form1NumeroSeguro) === 'Seguro Social' ? 'selected' : '' }} value="Seguro Social">Seguro Social</option>
+                    <option {{ isset($registroAccidente->form1NumeroSeguro) === 'IMSS' ? 'selected' : '' }} value="IMSS">IMSS</option>
+                    <option {{ isset($registroAccidente->form1NumeroSeguro) === 'ISSSTE' ? 'selected' : '' }} value="ISSSTE">ISSSTE</option>
                 </select>
             </div>
         </div>
@@ -400,12 +400,12 @@
                 <label for="form1SalarioMensual">Salario mensual: </label>
                 <select name="form1SalarioMensual" id="form1SalarioMensual" class="form-control">
                     <option value="" disabled selected>Seleccionar...</option>
-                    <option {{ isset($registroAccidente->form1SalarioMensual) == '$10000 - $20000' ? 'selected' : '' }} value="$10000 - $20000">$10000 - $20000</option>
-                    <option {{ isset($registroAccidente->form1SalarioMensual) == '$20000 - $30000' ? 'selected' : '' }} value="$20000 - $30000">$20000 - $30000</option>
-                    <option {{ isset($registroAccidente->form1SalarioMensual) == '$30000 - $40000' ? 'selected' : '' }} value="$30000 - $40000">$30000 - $40000</option>
-                    <option {{ isset($registroAccidente->form1SalarioMensual) == '$40000 - $50000' ? 'selected' : '' }} value="$40000 - $50000">$40000 - $50000</option>
-                    <option {{ isset($registroAccidente->form1SalarioMensual) == '$50000 - $60000' ? 'selected' : '' }} value="$50000 - $60000">$50000 - $60000</option>
-                    <option {{ isset($registroAccidente->form1SalarioMensual) == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+                    <option {{ isset($registroAccidente->form1SalarioMensual) === '$10000 - $20000' ? 'selected' : '' }} value="$10000 - $20000">$10000 - $20000</option>
+                    <option {{ isset($registroAccidente->form1SalarioMensual) === '$20000 - $30000' ? 'selected' : '' }} value="$20000 - $30000">$20000 - $30000</option>
+                    <option {{ isset($registroAccidente->form1SalarioMensual) === '$30000 - $40000' ? 'selected' : '' }} value="$30000 - $40000">$30000 - $40000</option>
+                    <option {{ isset($registroAccidente->form1SalarioMensual) === '$40000 - $50000' ? 'selected' : '' }} value="$40000 - $50000">$40000 - $50000</option>
+                    <option {{ isset($registroAccidente->form1SalarioMensual) === '$50000 - $60000' ? 'selected' : '' }} value="$50000 - $60000">$50000 - $60000</option>
+                    <option {{ isset($registroAccidente->form1SalarioMensual) === 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
                 </select>
             </div>
         </div>
