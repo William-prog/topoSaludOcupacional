@@ -25,7 +25,13 @@
     <tr class="info">
         <td>
             <!-- Fecha en que ocurrió el accidente -->
-            {{$dato->form2Fecha}}
+            <?php
+                date_default_timezone_set("America/Mexico_City");
+                setlocale(LC_TIME, 'es_VE.UTF-8', 'esp');
+                $data['Fecha'] = $dato->form2Fecha;
+                $marca = strtotime($data['Fecha']);
+                ?>
+                <?= strftime('%e/%B/%Y', $marca) ?>
         </td>
         <td>
             <!-- Hora exacta en que ocurrió el accidente (hh:mm)-->
