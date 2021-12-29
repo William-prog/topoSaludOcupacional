@@ -66,8 +66,14 @@
                 <td style="width: 5%;">
                     {{$registro->id}}
                 </td>
-                <td data-order="{{$registro->form2Fecha}}" style="width: 20%;">
-                    {{date('d-M-Y', strtotime($registro->form2Fecha))}}
+                <td style="width: 20%;">
+                    <?php
+                    date_default_timezone_set("America/Mexico_City");
+                    setlocale(LC_TIME, 'es_VE.UTF-8', 'esp');
+                    $data['Fecha'] = $registro->form2Fecha;
+                    $marca = strtotime($data['Fecha']);
+                    ?>
+                    <?= strftime('%e/%B/%Y', $marca) ?>
                 </td>
                 <td style="width: 35%;">
                     {{$registro->form1Nombre}} {{$registro->form1PrimerApellido}} {{$registro->form1SegundoApellido}}
