@@ -13,13 +13,15 @@
         <div class="form-group">
             <label for="form4TipoIncapacidad">Tipo de incapacidad o consecuencia:</label>
             <select name="form4TipoIncapacidad" id="form4TipoIncapacidad" class="form-control">
-                <option {{ isset($registroAccidente->form4TipoIncapacidad) === '' ? 'selected' : '' }} value="">Seleccionar..</option>
-                <option {{ isset($registroAccidente->form4TipoIncapacidad) === 'Temporal' ? 'selected' : '' }} value="Temporal">Temporal</option>
-                <option {{ isset($registroAccidente->form4TipoIncapacidad) === 'Parcial permanente' ? 'selected' : '' }} value="Parcial permanente">Parcial permanente</option>
-                <option {{ isset($registroAccidente->form4TipoIncapacidad) === 'Total permanente' ? 'selected' : '' }} value="Total permanente">Total permanente</option>
-                <option {{ isset($registroAccidente->form4TipoIncapacidad) === 'Muerte' ? 'selected' : '' }} value="Muerte">Muerte</option>
-                <option {{ isset($registroAccidente->form4TipoIncapacidad) === 'Sin incapacidad' ? 'selected' : '' }} value="Sin incapacidad">Sin incapacidad</option>
-                <option {{ isset($registroAccidente->form4TipoIncapacidad) === 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+                @isset ($registroAccidente->form4TipoIncapacidad)
+                <option {{ $registroAccidente->form4TipoIncapacidad == '' ? 'selected' : '' }} value="">Seleccionar..</option>
+                <option {{ $registroAccidente->form4TipoIncapacidad == 'Temporal' ? 'selected' : '' }} value="Temporal">Temporal</option>
+                <option {{ $registroAccidente->form4TipoIncapacidad == 'Parcial permanente' ? 'selected' : '' }} value="Parcial permanente">Parcial permanente</option>
+                <option {{ $registroAccidente->form4TipoIncapacidad == 'Total permanente' ? 'selected' : '' }} value="Total permanente">Total permanente</option>
+                <option {{ $registroAccidente->form4TipoIncapacidad == 'Muerte' ? 'selected' : '' }} value="Muerte">Muerte</option>
+                <option {{ $registroAccidente->form4TipoIncapacidad == 'Sin incapacidad' ? 'selected' : '' }} value="Sin incapacidad">Sin incapacidad</option>
+                <option {{ $registroAccidente->form4TipoIncapacidad == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+                @endisset
             </select>
         </div>
     </div>

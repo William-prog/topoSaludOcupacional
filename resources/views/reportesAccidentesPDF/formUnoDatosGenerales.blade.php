@@ -14,11 +14,11 @@
     <tr class="info">
         <td colspan="2">
             <!-- RFC -->
-            {{$dato->form1Curp}}
+            {{$dato->form1Rfc}}
         </td>
         <td colspan="2">
             <!-- CURP -->
-            {{$dato->form1Rfc}}
+            {{$dato->form1Curp}}
         </td>
     </tr>
     <tr class="subencabezado">
