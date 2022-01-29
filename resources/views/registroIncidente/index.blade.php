@@ -56,7 +56,6 @@
                 <th scope="col" style="width: 35%;"> Involucrado</th>
                 <th scope="col" style="width: 20%;"> Incapacidad / Consecuencia</th>
                 <th scope="col" style="width: 5%;"> Subir</th>
-                <!-- <th scope="col" style="width: 5%;"> Ver</th> -->
                 <th scope="col" style="width: 5%; "> PDF</th>
             </tr>
         </thead>

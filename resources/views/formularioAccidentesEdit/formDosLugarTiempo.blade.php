@@ -15,7 +15,6 @@
             <div class="col">
                 <label for="form2LugarEvento">Lugar del evento: </label>
                 <select name="form2LugarEvento" id="form2LugarEvento" class="form-control">
-                    @isset ($registroAccidente->form2LugarEvento)
                     <option value="">Seleccione</option>
                     <option {{ $registroAccidente->form2LugarEvento == 'Lugar habitual del trabajo' ? 'selected' : '' }} value="Lugar habitual del trabajo">Lugar habitual del trabajo</option>
                     <option {{ $registroAccidente->form2LugarEvento == 'En viaje o traslado por motivo de trabajo' ? 'selected' : '' }} value="En viaje o traslado por motivo de trabajo">En viaje o traslado por motivo de trabajo</option>
@@ -25,7 +24,6 @@
                     <option {{ $registroAccidente->form2LugarEvento == 'Otro' ? 'selected' : '' }} value="Otro">Otro</option>
                     <option {{ $registroAccidente->form2LugarEvento == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
                     <option {{ $registroAccidente->form2LugarEvento == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
-                    @endisset
                 </select>
             </div>
         </div>
@@ -58,13 +56,11 @@
             <div class="col">
                 <label for="form2Turno">Turno durante el cual ocurrió el evento: </label>
                 <select name="form2Turno" id="form2Turno" class="form-control">
-                    @isset ($registroAccidente->form2Turno)
                     <option>Seleccionar..</option>
                     <option {{ $registroAccidente->form2Turno == 'Diurno' ? 'selected' : '' }} value="Diurno">Diurno</option>
                     <option {{ $registroAccidente->form2Turno == 'Nocturno' ? 'selected' : '' }} value="Nocturno">Nocturno</option>
                     <option {{ $registroAccidente->form2Turno == 'Mixto' ? 'selected' : '' }} value="Mixto">Mixto</option>
                     <option {{ $registroAccidente->form2Turno == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
-                    @endisset
                 </select>
             </div>
         </div>
@@ -80,9 +76,7 @@
         <div class="form-group col">
             <div class="col">
                 <label for="form2LugarAtencion">Lugar donde recibió atención médica el accidentado: </label>
-                <textarea name="form2LugarAtencion" id="form2LugarAtencion" class="form-control" rows="3">
-                    {{isset($registroAccidente->form2LugarAtencion)?$registroAccidente->form2LugarAtencion:''}}
-                </textarea>
+                <textarea name="form2LugarAtencion" id="form2LugarAtencion" class="form-control" rows="3">{{isset($registroAccidente->form2LugarAtencion)?$registroAccidente->form2LugarAtencion:''}}</textarea>
             </div>
         </div>
     </div>
