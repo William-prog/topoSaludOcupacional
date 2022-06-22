@@ -16,13 +16,13 @@
                 <label for="form2LugarEvento">Lugar del evento: </label>
                 <select name="form2LugarEvento" id="form2LugarEvento" class="form-control">
                     <option value="">Seleccione</option>
-                    <option {{ isset($registroIncidente->form2LugarEvento) == 'Lugar habitual del trabajo' ? 'selected' : '' }} value="Lugar habitual del trabajo">Lugar habitual del trabajo</option>
-                    <option {{ isset($registroIncidente->form2LugarEvento) == 'En viaje o traslado por motivo de trabajo' ? 'selected' : '' }} value="En viaje o traslado por motivo de trabajo">En viaje o traslado por motivo de trabajo</option>
-                    <option {{ isset($registroIncidente->form2LugarEvento) == 'Otro lugar dentro del centro de trabajo' ? 'selected' : '' }} value="Otro lugar dentro del centro de trabajo">Otro lugar dentro del centro de trabajo</option>
-                    <option {{ isset($registroIncidente->form2LugarEvento) == 'En trayecto del domicilio al trabajo' ? 'selected' : '' }} value="En trayecto del domicilio al trabajo">En trayecto del domicilio al trabajo</option>
-                    <option {{ isset($registroIncidente->form2LugarEvento) == 'En trayecto del trabajo al domicilio' ? 'selected' : '' }} value="En trayecto del trabajo al domicilio">En trayecto del trabajo al domicilio</option>
-                    <option {{ isset($registroIncidente->form2LugarEvento) == 'Otro' ? 'selected' : '' }} value="Otro">Otro</option>
-                    <option {{ isset($registroIncidente->form2LugarEvento) == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+                    <option value="Lugar habitual del trabajo">Lugar habitual del trabajo</option>
+                    <option value="En viaje o traslado por motivo de trabajo">En viaje o traslado por motivo de trabajo</option>
+                    <option value="Otro lugar dentro del centro de trabajo">Otro lugar dentro del centro de trabajo</option>
+                    <option value="En trayecto del domicilio al trabajo">En trayecto del domicilio al trabajo</option>
+                    <option value="En trayecto del trabajo al domicilio">En trayecto del trabajo al domicilio</option>
+                    <option value="Otro">Otro</option>
+                    <option value="No especificado">No especificado</option>
                 </select>
             </div>
         </div>
@@ -56,10 +56,10 @@
                 <label for="form2Turno">Turno durante el cual ocurrió el evento: </label>
                 <select name="form2Turno" id="form2Turno" class="form-control">
                     <option>Seleccionar..</option>
-                    <option {{ isset($registroIncidente->form2Turno) == 'Diurno' ? 'selected' : '' }} value="Diurno">Diurno</option>
-                    <option {{ isset($registroIncidente->form2Turno) == 'Nocturno' ? 'selected' : '' }} value="Nocturno">Nocturno</option>
-                    <option {{ isset($registroIncidente->form2Turno) == 'Mixto' ? 'selected' : '' }} value="Mixto">Mixto</option>
-                    <option {{ isset($registroIncidente->form2Turno) == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
+                    <option value="Diurno">Diurno</option>
+                    <option value="Nocturno">Nocturno</option>
+                    <option value="Mixto">Mixto</option>
+                    <option value="No especificado">No especificado</option>
                 </select>
             </div>
         </div>
@@ -76,13 +76,11 @@
             <div class="col">
                 <label for="form2EspecificacionLugar">Especificación del lugar del incidente: </label>
                 <textarea name="form2EspecificacionLugar" id="form2EspecificacionLugar" class="form-control" rows="3">
-                {{isset($registroIncidente->form2EspecificacionLugar)?$registroIncidente->form2EspecificacionLugar:''}}
                 </textarea>
             </div>
             <div class="col">
                 <label for="form2AccionesAtencion">Acciones inmediatas de atención al incidente: </label>
                 <textarea name="form2AccionesAtencion" id="form2AccionesAtencion" class="form-control" rows="3">
-                {{isset($registroIncidente->form2AccionesAtencion)?$registroIncidente->form2AccionesAtencion:''}}
                 </textarea>
             </div>
         </div>

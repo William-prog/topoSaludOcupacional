@@ -13,15 +13,13 @@
         <div class="form-group">
             <label for="form4TipoIncapacidad">Tipo de incapacidad o consecuencia:</label>
             <select name="form4TipoIncapacidad" id="form4TipoIncapacidad" class="form-control">
-                @isset ($registroAccidente->form4TipoIncapacidad)
-                <option {{ $registroAccidente->form4TipoIncapacidad == '' ? 'selected' : '' }} value="">Seleccionar..</option>
-                <option {{ $registroAccidente->form4TipoIncapacidad == 'Temporal' ? 'selected' : '' }} value="Temporal">Temporal</option>
-                <option {{ $registroAccidente->form4TipoIncapacidad == 'Parcial permanente' ? 'selected' : '' }} value="Parcial permanente">Parcial permanente</option>
-                <option {{ $registroAccidente->form4TipoIncapacidad == 'Total permanente' ? 'selected' : '' }} value="Total permanente">Total permanente</option>
-                <option {{ $registroAccidente->form4TipoIncapacidad == 'Muerte' ? 'selected' : '' }} value="Muerte">Muerte</option>
-                <option {{ $registroAccidente->form4TipoIncapacidad == 'Sin incapacidad' ? 'selected' : '' }} value="Sin incapacidad">Sin incapacidad</option>
-                <option {{ $registroAccidente->form4TipoIncapacidad == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
-                @endisset
+                <option value="">Seleccionar..</option>
+                <option value="Temporal">Temporal</option>
+                <option value="Parcial permanente">Parcial permanente</option>
+                <option value="Total permanente">Total permanente</option>
+                <option value="Muerte">Muerte</option>
+                <option value="Sin incapacidad">Sin incapacidad</option>
+                <option value="No especificado">No especificado</option>
             </select>
         </div>
     </div>
@@ -215,7 +213,6 @@
                     <div class="form-group">
                         <label for="form4DescripcionAreaAfectada">Descripcion del area afectada:</label>
                         <textarea name="form4DescripcionAreaAfectada" id="form4DescripcionAreaAfectada" class="form-control" rows="4">
-                        {{isset($registroAccidente->form4DescripcionAreaAfectada)?$registroAccidente->form4DescripcionAreaAfectada:''}}
                         </textarea>
                     </div>
                 </div>

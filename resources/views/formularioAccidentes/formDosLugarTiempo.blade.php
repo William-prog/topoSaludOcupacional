@@ -15,17 +15,14 @@
             <div class="col">
                 <label for="form2LugarEvento">Lugar del evento: </label>
                 <select name="form2LugarEvento" id="form2LugarEvento" class="form-control">
-                    @isset ($registroAccidente->form2LugarEvento)
                     <option value="">Seleccione</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'Lugar habitual del trabajo' ? 'selected' : '' }} value="Lugar habitual del trabajo">Lugar habitual del trabajo</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'En viaje o traslado por motivo de trabajo' ? 'selected' : '' }} value="En viaje o traslado por motivo de trabajo">En viaje o traslado por motivo de trabajo</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'Otro lugar dentro del centro de trabajo' ? 'selected' : '' }} value="Otro lugar dentro del centro de trabajo">Otro lugar dentro del centro de trabajo</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'En trayecto del domicilio al trabajo' ? 'selected' : '' }} value="En trayecto del domicilio al trabajo">En trayecto del domicilio al trabajo</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'En trayecto del trabajo al domicilio' ? 'selected' : '' }} value="En trayecto del trabajo al domicilio">En trayecto del trabajo al domicilio</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'Otro' ? 'selected' : '' }} value="Otro">Otro</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
-                    <option {{ $registroAccidente->form2LugarEvento == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
-                    @endisset
+                    <option value="Lugar habitual del trabajo">Lugar habitual del trabajo</option>
+                    <option value="En viaje o traslado por motivo de trabajo">En viaje o traslado por motivo de trabajo</option>
+                    <option value="Otro lugar dentro del centro de trabajo">Otro lugar dentro del centro de trabajo</option>
+                    <option value="En trayecto del domicilio al trabajo">En trayecto del domicilio al trabajo</option>
+                    <option value="En trayecto del trabajo al domicilio">En trayecto del trabajo al domicilio</option>
+                    <option value="Otro">Otro</option>
+                    <option value="No especificado">No especificado</option>
                 </select>
             </div>
         </div>
@@ -58,13 +55,11 @@
             <div class="col">
                 <label for="form2Turno">Turno durante el cual ocurrió el evento: </label>
                 <select name="form2Turno" id="form2Turno" class="form-control">
-                    @isset ($registroAccidente->form2Turno)
                     <option>Seleccionar..</option>
-                    <option {{ $registroAccidente->form2Turno == 'Diurno' ? 'selected' : '' }} value="Diurno">Diurno</option>
-                    <option {{ $registroAccidente->form2Turno == 'Nocturno' ? 'selected' : '' }} value="Nocturno">Nocturno</option>
-                    <option {{ $registroAccidente->form2Turno == 'Mixto' ? 'selected' : '' }} value="Mixto">Mixto</option>
-                    <option {{ $registroAccidente->form2Turno == 'No especificado' ? 'selected' : '' }} value="No especificado">No especificado</option>
-                    @endisset
+                    <option value="Diurno">Diurno</option>
+                    <option value="Nocturno">Nocturno</option>
+                    <option value="Mixto">Mixto</option>
+                    <option value="No especificado">No especificado</option>
                 </select>
             </div>
         </div>
@@ -81,7 +76,6 @@
             <div class="col">
                 <label for="form2LugarAtencion">Lugar donde recibió atención médica el accidentado: </label>
                 <textarea name="form2LugarAtencion" id="form2LugarAtencion" class="form-control" rows="3">
-                    {{isset($registroAccidente->form2LugarAtencion)?$registroAccidente->form2LugarAtencion:''}}
                 </textarea>
             </div>
         </div>
