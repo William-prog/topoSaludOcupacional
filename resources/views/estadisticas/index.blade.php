@@ -16,6 +16,9 @@
 
 
     <style>
+        .cardex{
+            background-color: none;
+        }
         .cardManteniemito:hover {
             /* background-color: #3D3D3D; */
             -webkit-transition: background-color 500ms linear;
